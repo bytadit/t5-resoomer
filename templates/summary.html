@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Resoomer Result - Text Summarization using T5 - Maroon Team</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar" style="background-color: maroon">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-medium text-white" href="/">
+                <img src="/static/maroon-team.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+                Maroon T5 Resoomer
+            </a>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="form-group text-center">
+            <label for="article-text" class="pt-4">
+                <strong>Hasil Ringkasan</strong>
+            </label>
+            <br>
+            <div class="shadow-sm bg-light mt-4 p-4 border border-success-subtle rounded-2">
+                <p>{{ result }}</p>
+            </div>
+            <a href="/" type="button" class="mt-4 btn btn-dark">Kembali</a>
+{#            <textarea class="form-control my-3" name="result" style="height: 200px" placeholder="Masukkan Teks Disini" id="article-text" style="height: 100px"></textarea>#}
+        </div>
+    </div>
+</body>
+</html>

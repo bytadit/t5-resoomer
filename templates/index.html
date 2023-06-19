@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Resoomer Input - Text Summarization using T5 - Maroon Team</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar" style="background-color: maroon">
+      <div class="container-fluid">
+        <a class="navbar-brand fw-medium text-white" href="/">
+          <img src="/static/maroon-team.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+          Maroon T5 Resoomer
+        </a>
+      </div>
+    </nav>
+    <form action="/summarize" method="post">
+        <div class="container">
+            <div class="form-group text-center">
+                <label for="article-text" class="pt-4">
+                    <strong>Masukkan Teks Untuk Diringkas</strong>
+                </label>
+                <br>
+                <textarea class="shadow-sm form-control my-3" name="article-text" style="height: 200px" placeholder="Masukkan Teks Disini" id="article-text" style="height: 100px"></textarea>
+            </div>
+            <br>
+            <button type="submit" class="btn btn-primary">Summarize!</button>
+        </div>
+    </form>
+    <form action="/summarize-link" method="post">
+        <div class="container">
+            <div class="form-group text-center">
+                <label for="article-link" class="pt-4">
+                    <strong>Masukkan Link Artikel Untuk Diringkas</strong>
+                </label>
+                <br>
+                <div class="input-group flex-nowrap">
+                  <input type="text" class="form-control" id="article-link" name="article-link" placeholder="Masukkan Link" aria-label="Article Link" aria-describedby="addon-wrapping">
+                </div>
+            </div>
+            <br>
+            <button type="submit" class="btn btn-primary">Summarize!</button>
+        </div>
+    </form>
+</body>
+</html>
