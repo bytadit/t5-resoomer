@@ -73,7 +73,7 @@ def getSummaryLink():
             num_return_sequences=1,
             no_repeat_ngram_size=1,
             remove_invalid_values=True,
-            max_length=128,
+            max_length=256,
         )
     result = t5_tokenizer.batch_decode(preds, skip_special_tokens=True)
     return render_template('summary.html', result=result[0])
@@ -90,7 +90,7 @@ def getSummary():
                 num_return_sequences=1,
                 no_repeat_ngram_size=1,
                 remove_invalid_values=True,
-                max_length=128,
+                max_length=256,
             )
     result = t5_tokenizer.batch_decode(preds, skip_special_tokens=True)
     return render_template('summary.html',result=result[0])
